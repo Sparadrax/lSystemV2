@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!-- L-system explorer. Validated rewriting rules expand an axiom, then a turtle interpreter turns symbols into line segments. -->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>L-System V2</title>
+    <link rel="stylesheet" href="/Lib/Bootstrap4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./lSystemV2.css">
+    <link rel="stylesheet" href="/NavBar.css">
+    <script type="importmap">
+        { "imports": { "three": "../../Lib/Three/Three.js" } }
+    </script>
+    <link rel="stylesheet" href="/Theme.css?v=1">
+    <link rel="canonical" href="https://louisdubeux.com/Projects/lSystemV2/lSystemV2.html">
+    <meta name="description" content="A Three.js foundation for exploring new procedural shapes and structures.">
+</head>
+<body>
+    <!-- Shared navigation is populated by /NavBar.js. -->
+    <div id="nav-placeholder"></div>
+    <main id="lsystem-view" aria-label="L-System V2 development scene">
+        <section class="lsystem-info">
+            <h1>L-System V2</h1>
+            <p>Three.js development scene</p>
+            <small>Drag to orbit · Scroll to zoom</small>
+        </section>
+        <p id="scene-error" role="alert" hidden></p>
+    </main>
+    
+    <!-- Load the project entry module after its controls and view containers exist. -->
+    <script type="module" src="./lSystemV2.js"></script>
+    <script src="/NavBar.js" defer></script>
+</body>
+</html>
